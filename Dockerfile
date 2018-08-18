@@ -22,6 +22,7 @@ ENV SHELL /bin/bash
 
 RUN apt-get update && \
     apt-get install -y  wget \
+                        curl \
                         tar \
                         less \
                         vim \
