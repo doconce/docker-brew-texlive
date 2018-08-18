@@ -35,7 +35,7 @@ RUN apt-get update && \
 WORKDIR /root
 
 COPY texlive.profile /root
-RUN curl -sL https://ctan.uib.no/systems/texlive/tlnet/install-tl-unx.tar.gz | tar xf - && \
+RUN curl -sL https://ctan.uib.no/systems/texlive/tlnet/install-tl-unx.tar.gz | tar zxf - && \
     cd install-tl-20* && \
     ./install-tl -profile ../texlive.profile && \
     cd .. && \
