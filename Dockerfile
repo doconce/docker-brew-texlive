@@ -26,6 +26,7 @@ RUN apt-get update && \
                         tar \
                         less \
                         vim \
+                        make \
                         libgetopt-long-descriptive-perl \
                         python-pygments && \
     apt-get purge && \
